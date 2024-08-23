@@ -157,7 +157,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 28vw;
     height: 16vw;
     border-radius: 2vw;
     background-size: cover;
@@ -165,6 +165,7 @@ h1 {
     cursor: pointer;
     transition: 200ms;
     font-size: 0;
+    overflow: hidden;
 }
 .card:hover {
     position: relative;
@@ -180,4 +181,10 @@ h1 {
     font-size: 3vw;
     color: rgba(240, 248, 255, 0.559);
     text-shadow: 0px 0px 3vw rgb(0, 0, 0);
+}
+
+.card img {
+    z-index: -1;
+    height: 100%;
+    position: absolute;
 }
