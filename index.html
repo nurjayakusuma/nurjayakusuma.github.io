@@ -21,40 +21,37 @@
 <!-- -------------------------------- Navbar ------------------------------------- -->
 <nav>
     <ul>
-        <li>home</li>
-        <li>project</li>
-        <li>contact</li>
-        <li>about</li>
+        <li><a href="#">home</a></li>
+        <li><a href="#portofolio">portofolio</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
     </ul>
 </nav>
 
 <!-- -------------------------------- Container ------------------------------------- -->
 <main>
     <div class="home">
-        <div class="title">
-            <h1>Hi, I’am NURJAYA KUSUMA</h1>
-            <h2>I am a UI/UX designer & website developer</h2>
-            <p class="title-home">I am a UI/UX designer, I am a graduate of D3 in informatics <br> engineering at Amikom Yogyakarta University, one of the well- <br> known campuses in Indonesia. <br> I have experience as a UI/UX designer since 2022, in the <br> independent campus internship program, and I have handled <br> several UI/UX projects.</p>
-            <button class="mail">
-                <i class="imail" data-feather="mail"></i>
-                mail me
-            </button>
+        <div class="title-home">
+            <h2>Hi, I’am NURJAYA KUSUMA</h2>
+            <h1>I am a UI/UX designer & website developer</h1>
+            <h5>I am a UI/UX designer, I am a graduate of D3 in informatics <br> engineering at Amikom Yogyakarta University, one of the well- <br> known camh5uses in Indonesia. <br> I have experience as a UI/UX designer since 2022, in the <br> independent campus internship program, and I have handled <br> several UI/UX projects.</p>
+            <button onclick="location.href='mailto:ahoydata@gmail.com'" class="mail">mail me</button>
         </div>
         <img class="foto" src="asset/img/black white.jpeg" alt="">
     </div>
-    <h1 class="project-heading">selected project / UI/UX Design</h1>
+    <h3>portofolio</h3>
 
 <!-- swiper card slider -->
     <section>
         <i id="kiri" class="kiri"><i data-feather="chevron-left"></i></i>
         <i id="kanan" class="kanan"><i data-feather="chevron-right"></i></i>
 
-        <div class="card-container">
+        <div id="portofolio" class="card-container">
             <div class="card-project">
                 <img src="asset/img/crowde.png" alt="">
                 <div class="title-card">
-                    <h3>crowde</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <h4>crowde</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
                     <div class="div-button">
                         <button>learn more</button> 
                     </div>
@@ -62,46 +59,114 @@
             </div>
             
             <div class="card-project">
-                <img src="asset/img/pbji.jpg" alt="">
-                <div class="title-card">
-                    <h3>PBJI-DIY</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="div-button">
-                        <button>learn more</button> 
-                    </div>
-                </div>
-            </div>
-            <div class="card-project">
                 <img src="asset/img/smartapp.png" alt="">
                 <div class="title-card">
-                    <h3>smart-app</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <h4>smart-app</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
                     <div class="div-button">
                         <button>learn more</button> 
                     </div>
                 </div>
             </div>
+
+            <div class="card-project">
+                <img src="asset/img/pbji.jpg" alt="">
+                <div class="title-card">
+                    <h4>PBJI-DIY</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="div-button">
+                        <button>learn more</button> 
+                    </div>
+                </div>
+            </div>
+
             <div class="card-project">
                 <img src="asset/img/ecomerce.png" alt="">
                 <div class="title-card">
-                    <h3>marketplace</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <h4>marketplace</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
                     <div class="div-button">
                         <button>learn more</button> 
                     </div>
                 </div>
             </div>
+            
             <div class="card-project">
                 <img src="asset/img/crowde.png" alt="">
                 <div class="title-card">
-                    <h3>crowde</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <h4>crowde</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
                     <div class="div-button">
                         <button>learn more</button> 
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+<!-- end swiper card slider -->
+
+<!-- about me -->
+<div>
+    <h3>about me</h3>
+    <div class="about-container">
+        <div class="about-card">
+            <div class="about-img">
+                <img src="asset/img/comunicative.png" alt="">
+            </div>
+            <h4>comunicative</h4>
+            <h6>I am a person who easily <br>
+                communicates with anyone, the type <br>
+                of person who is easy to get along <br>
+                with and can convey messages well.</h6>
+        </div>
+        
+        <div class="about-card">
+            <div class="about-img">
+                <img src="asset/img/time management.png" alt="">
+            </div>
+            <h4>time management</h4>
+            <h6>I really appreciate time, and I'm the <br>
+                type of person who is always on timebr <br>
+                at an event, and completes <br>
+                assignments on time.</h6>
+        </div>
+
+        <div class="about-card">
+            <div class="about-img">
+                <img src="asset/img/collaborative.png" alt="">
+            </div>
+            <h4>collaborative</h4>
+            <h6>I am a person who likes to <br>
+                collaborate with others, I am the type <br>
+                of person who likes to work in a <br>
+                team, and I like to lead.</h6>
+        </div>
+
+        <div class="about-card">
+            <div class="about-img">
+                <img src="asset/img/creative.png" alt="">
+            </div>
+            <h4>creative</h4>
+            <h6>I am a creative person, the type of <br>
+                person who thinks critically, provides <br>
+                a solution to a problem and solves it.</h6>
+        </div>
+
+    </div>
+</div>
+<!-- about me end -->
+
+<!-- skill & tools -->
+
+<h3>skill & tools</h3>
+
+<div class="tools-container">
+    <img src="asset/icon/figma.png" alt="">
+    <img src="asset/icon/html.png" alt="">
+    <img src="asset/icon/css.png" alt="">
+    <img src="asset/icon/js.png" alt="">
+</div>
+    
     </div>
 </main>
 
