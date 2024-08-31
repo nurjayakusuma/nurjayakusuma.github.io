@@ -453,6 +453,7 @@ main {
     color: var(--white);
     padding: 1vw 1.5vw;
     font-family: 'Inter Tight';
+    font-size: 1vw;
 }
 
 .contact-container form div input:focus, 
