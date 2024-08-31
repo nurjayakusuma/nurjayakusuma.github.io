@@ -1,7 +1,9 @@
 :root {
-    --red:rgb(255, 0, 0);
-    --white:rgb(225, 225, 225);
-    --grey:rgb(177, 177, 177);
+    --red:#ee0000;
+    --red-hover: #d00000;
+    --white:#e1e1e1;
+    --grey:#b1b1b1;
+    --light: #303030;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -53,7 +55,11 @@ a {
     color: inherit;
 }
 
-/* content */
+input, textarea {
+    border: none;
+}
+
+/* componen */
 html {
     scroll-behavior: smooth;
 }
@@ -63,6 +69,15 @@ body {
     color: var(--white);
     background-color: rgb(29, 29, 29);
     padding: 0px 5%;
+}
+
+a {
+    color: var(--white);
+    transition: 200ms;
+}
+
+a:hover {
+    color: var(--red);
 }
 
 h1 {
@@ -75,7 +90,6 @@ h1 {
 h2 {
     font-size: 2.3vw;
     font-weight: 600;
-    margin-bottom: 1% ;
     color: var(--red);
 }
 
@@ -93,15 +107,75 @@ h5 {
     font-family: arial, sans-serif;
     color: var(--grey);
     font-size: 1.5vw;
-    margin-top: 1vw;
 }
 
 h6 {
     font-size: 0.8vw;
-    padding: 0.5vw 0;
     color: var(--grey);
 }
 
+section {
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+}
+
+button {
+    font-family: 'Inter Tight';
+    font-weight: 500;
+    transition: 200ms;
+    border: none;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--red);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    outline: .1vw solid var(--red);
+}
+
+button.one {
+    border-radius: .5vw;
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+button.two {
+    border-radius: .3vw;
+    padding: .7vw;
+    font-size: 1vw;
+}
+
+/* card */
+.card {
+    border-radius: 1vw;
+    width: 20vw;
+    background-color: #303030;
+    font-family: "segoe ui";
+    color: white;
+    padding-bottom: 1.5vw;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    margin-bottom: 1.5vw;
+    border-radius: 0 0 0 2.5vw;
+}
+
+.card-content {
+    padding: 0 8%;
+}
+
+.button-card-container {
+    margin-top: 10%;
+    width: 100%;
+}
+/* end card */
+
+
+/* document */
 
 nav {
     display: flex;
@@ -127,46 +201,37 @@ main {
     margin-top: 5%;
 }
 
-.home {
+.home-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6vw;
 }
 
-div .title-home {
+.home-title-container {
     width: 60%;
     position: relative;
 }
 
-button.mail {
-    width: 100%;
-    height: 0%;
-    position: absolute;
-    bottom: 0;
-    border: 0;
-    padding: 1.6vw 0vw;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5%;
-    font-size: 2vw;
-    color: white;
-    cursor: pointer;
-}
-
-img.foto {
+.home-banner-img {
     width: 30%;
 }
 
+.button-home-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
-/* project */
-section {
+
+/* portofolio */
+.portofolio-container {
     display: flex;
     align-items: center;
     position: relative;
-    margin-top: 3vw;
-    margin-bottom: 6vw;
+}
+
+.portofolio-container h4, 
+.portofolio-container h6 {
+    margin: .6vw 0;
 }
 
 .kiri, .kanan {
@@ -235,55 +300,6 @@ section {
     gap: 1%;
 }
 
-.card-project {
-    border-radius: 1vw;
-    width: 20vw;
-    background-color: rgb(48, 48, 48);
-    font-family: "segoe ui";
-    color: white;
-    padding-bottom: 1.4vw;
-    overflow: hidden;
-}
-
-.card-project img {
-    width: 100%;
-    margin-bottom: 1.5vw;
-    border-radius: 0 0 0 2.5vw;
-}
-
-.title-card {
-    padding: 0 1.5vw;
-}
-
-div.div-button {
-    display: flex;
-    justify-content: center;
-}
-
-.card-project button {
-    width: 100%;
-    border-radius: 0.3vw;
-    color: var(--white);
-    border: 0;
-    background-color: var(--red);
-    font-size: 1vw;
-    padding: 0.5vw;
-    margin-top: 2vw;
-    transition: 200ms;
-    cursor: pointer;
-}
-
-.card-project button:hover {
-    width: 100%;
-    border-radius: 0.3vw;
-    color: var(--white);
-    border: 0;
-    background-color: rgb(221, 0, 0);
-    font-size: 1vw;
-    padding: 0.5vw;
-    margin-top: 2vw;
-    cursor: pointer;
-}
 
 /* about me */
 
@@ -291,8 +307,6 @@ div.div-button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3vw;
-    margin-bottom: 6vw;
 }
 
 .about-card {
@@ -358,13 +372,11 @@ div.div-button {
 .tools-container {
     width: 100%;
     height: 8vw;
-    background-image: linear-gradient(rgba(212, 212, 212, 0.048), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(rgba(212, 212, 212, 0.048), rgba(0, 0, 0, 0.097));
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    margin-top: 3vw;
-    margin-bottom: 6vw
 }
 
 .tools-container img {
@@ -383,4 +395,99 @@ div.div-button {
     transition: 200ms;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.482));
 }
+
+/* contact */
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../img/contact-bg.png');
+    background-size:60% ;
+    background-repeat: no-repeat;
+}
+
+.contact-container .bio-container {
+    width: 45%;
+}
+
+.contact-container .bio-container .bio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 1vw 0;
+    text-align: left;
+    line-height: normal;
+    color: #ff0000;
+}
+
+.contact-container .bio-container .bio .icon {
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+.contact-container .bio-container .bio h4 {
+    font-weight: 400;
+}
+
+.contact-container .bio-container .bio h6 {
+    font-weight: 200;
+}
+
+.contact-container form {
+    width: 55%;
+}
+
+.contact-container form div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin: 1vw 0;
+}
+
+.contact-container form div input, 
+.contact-container form div textarea {
+    width: 100%;
+    background-color: var(--light);
+    color: var(--white);
+    padding: 1vw 1.5vw;
+    font-family: 'Inter Tight';
+}
+
+.contact-container form div input:focus, 
+.contact-container form div textarea:focus {
+    outline: 1px solid var(--red);
+}
+
+.contact-container form div textarea {
+    height: 5vw;
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+    font-family: 'Inter Tight';
+    color: var(--light);
+    font-size: 1vw;
+    text-align: center;
+    background-color: rgb(21, 21, 21);
+}
+
+footer div div {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding: 1vw 0; 
+}
+
+footer .icon {
+    width: 2vw;
+    height: 2vw;
+}
+
 

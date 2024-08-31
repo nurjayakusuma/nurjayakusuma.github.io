@@ -12,102 +12,116 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
     <!-- my style -->
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
 
-<!-- -------------------------------- Navbar ------------------------------------- -->
+<!-- nav bar -->
 <nav>
     <ul>
         <li><a href="#">home</a></li>
         <li><a href="#portofolio">portofolio</a></li>
-        <li><a href="">about</a></li>
-        <li><a href="">contact</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
     </ul>
 </nav>
+<!-- end nav bar -->
 
-<!-- -------------------------------- Container ------------------------------------- -->
+<!-- content -->
 <main>
-    <div class="home">
-        <div class="title-home">
+<section>
+    <div class="home-container">
+        <div class="home-title-container">
             <h2>Hi, I’am NURJAYA KUSUMA</h2>
             <h1>I am a UI/UX designer & website developer</h1>
             <h5>I am a UI/UX designer, I am a graduate of D3 in informatics <br> engineering at Amikom Yogyakarta University, one of the well- <br> known camh5uses in Indonesia. <br> I have experience as a UI/UX designer since 2022, in the <br> independent campus internship program, and I have handled <br> several UI/UX projects.</p>
-            <button onclick="location.href='mailto:ahoydata@gmail.com'" class="mail">mail me</button>
+            <div class="button-home-container">
+                <button onclick="location.href='mailto:ahoydata@gmail.com'" class="one">mail me</button>
+            </div>
         </div>
-        <img class="foto" src="asset/img/black white.jpeg" alt="">
+        <img class="home-banner-img" src="asset/img/black white.jpeg" alt="">
     </div>
-    <h3>portofolio</h3>
+</section>
 
+<!-- portofolio -->
+<h3 id="portofolio" >portofolio</h3>
 <!-- swiper card slider -->
-    <section>
+<section>
+    <div class="portofolio-container">
         <i id="kiri" class="kiri"><i data-feather="chevron-left"></i></i>
         <i id="kanan" class="kanan"><i data-feather="chevron-right"></i></i>
 
-        <div id="portofolio" class="card-container">
-            <div class="card-project">
-                <img src="asset/img/crowde.png" alt="">
-                <div class="title-card">
+        <div class="card-container">
+            <div class="card-project card">
+                <img class="card-img" src="asset/img/crowde.png" alt="">
+                <div class="card-content">
                     <h4>crowde</h4>
                     <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="div-button">
-                        <button>learn more</button> 
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card-project">
-                <img src="asset/img/smartapp.png" alt="">
-                <div class="title-card">
-                    <h4>smart-app</h4>
-                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="div-button">
-                        <button>learn more</button> 
+                    <div class="button-card-container">
+                        <button class="two">learn more</button> 
                     </div>
                 </div>
             </div>
 
-            <div class="card-project">
-                <img src="asset/img/pbji.jpg" alt="">
-                <div class="title-card">
-                    <h4>PBJI-DIY</h4>
+            <div class="card-project card">
+                <img class="card-img" src="asset/img/smartapp.png" alt="">
+                <div class="card-content">
+                    <h4>samrt-app</h4>
                     <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="div-button">
-                        <button>learn more</button> 
+                    <div class="button-card-container">
+                        <button class="two">learn more</button> 
                     </div>
                 </div>
             </div>
 
-            <div class="card-project">
-                <img src="asset/img/ecomerce.png" alt="">
-                <div class="title-card">
-                    <h4>marketplace</h4>
+            <div class="card-project card">
+                <img class="card-img" src="asset/img/pbji.jpg" alt="">
+                <div class="card-content">
+                    <h4>pbji-DIY</h4>
                     <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="div-button">
-                        <button>learn more</button> 
+                    <div class="button-card-container">
+                        <button class="two">learn more</button> 
                     </div>
                 </div>
             </div>
+
+            <div class="card-project card">
+                <img class="card-img" src="asset/img/ecomerce.png" alt="">
+                <div class="card-content">
+                    <h4>ecommerce</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="button-card-container">
+                        <button class="two">learn more</button> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-project card">
+                <img class="card-img" src="asset/img/mobileapp.jpg" alt="">
+                <div class="card-content">
+                    <h4>mobile-app</h4>
+                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+                    <div class="button-card-container">
+                        <button class="two">learn more</button> 
+                    </div>
+                </div>
+            </div>
+
             
-            <div class="card-project">
-                <img src="asset/img/crowde.png" alt="">
-                <div class="title-card">
-                    <h4>crowde</h4>
-                    <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
-                    <div class="div-button">
-                        <button>learn more</button> 
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 <!-- end swiper card slider -->
+ <!-- end portofolio -->
 
 <!-- about me -->
-<div>
-    <h3>about me</h3>
+<h3 id="about">about me</h3>
+
+ <section>
     <div class="about-container">
         <div class="about-card">
             <div class="about-img">
@@ -153,22 +167,80 @@
         </div>
 
     </div>
-</div>
+</section>
+
 <!-- about me end -->
 
 <!-- skill & tools -->
-
-<h3>skill & tools</h3>
-
-<div class="tools-container">
-    <img src="asset/icon/figma.png" alt="">
-    <img src="asset/icon/html.png" alt="">
-    <img src="asset/icon/css.png" alt="">
-    <img src="asset/icon/js.png" alt="">
-</div>
-    
+<h3 id="skill">skill & tools</h3>
+<section>
+    <div class="tools-container">
+        <img src="asset/icon/figma.png" alt="">
+        <img src="asset/icon/html.png" alt="">
+        <img src="asset/icon/css.png" alt="">
+        <img src="asset/icon/js.png" alt="">
     </div>
+</section>
+    
+<!-- contact -->
+
+<h3 id="contact">contact</h3>
+ <section>
+    <div class="contact-container">
+        <div class="bio-container">
+            <div class="bio">
+                <i class="icon" data-feather="map-pin"></i>
+                <div>
+                    <h4>Address</h4>
+                    <h6>Tangerang Banten 35911</h6>
+                </div>
+            </div>
+            <div class="bio">
+                <i class="icon" data-feather="phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <h6>+62 823 - 1377 - 8487</h6>
+                </div>
+            </div>
+            <div class="bio">
+                <i class="icon" data-feather="mail"></i>
+                <div>
+                    <h4>Email</h4>
+                    <h6>ahoydata@gmail.com</h6>
+                </div>
+            </div>
+        </div>
+        <form method="post" action="mailto:ahoydata@gmail.com">
+            <div>
+                <input type="text" name="name" placeholder="your name">
+                <input type="email" name="email" placeholder="your mail">
+            </div>
+            <div>
+                <input type="text" name="subject" placeholder="subject">
+            </div>
+            <div>
+                <textarea name="message" id="" placeholder="message"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="two">submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
 </main>
+
+<footer>
+    <div>
+        <div>
+            <i class="icon" data-feather="facebook" ></i>
+            <i class="icon" data-feather="instagram" ></i>
+            <i class="icon" data-feather="twitter" ></i>
+            <i class="icon" data-feather="linkedin" ></i>
+        </div>
+        <div>@nurjaya kusuma</div>
+    </div>
+</footer>
 
 
    
