@@ -60,7 +60,7 @@ input, textarea {
 }
 
 /* componen */
-html {
+html, body {
     scroll-behavior: smooth;
 }
 
@@ -68,7 +68,11 @@ body {
     font-family: 'kanit', sans-serif;
     color: var(--white);
     background-color: rgb(29, 29, 29);
+}
+
+main {
     padding: 0px 5%;
+
 }
 
 a {
@@ -84,7 +88,7 @@ h1 {
     font-size: 3.6vw;
     font-weight: 700;
     color: var(--white);
-    line-height: normal;
+
 }
 
 h2 {
@@ -137,8 +141,8 @@ button:hover {
 
 button.one {
     border-radius: .5vw;
-    padding: 1vw;
-    font-size: 2vw;
+    padding: .7vw;
+    font-size: 1.5vw;
 }
 
 button.two {
@@ -181,17 +185,19 @@ nav {
     display: flex;
     justify-content: center;
     padding: 2% 30%;
+    border-bottom: .1vw solid rgba(88, 88, 88, 0.268);
 }
 
 nav ul {
     width: 100%;
     text-decoration: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 8%;
 }
 
 nav ul li {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     font-weight: 300;
 }
 
@@ -204,22 +210,28 @@ main {
 .home-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .home-title-container {
-    width: 60%;
+    width: 65%;
     position: relative;
 }
 
-.home-banner-img {
-    width: 30%;
+.home-title-container h2 {
+    margin-bottom: .5vw;
 }
 
 .button-home-container {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    width: 30%;
+    margin-top: 3vw;
 }
+
+.home-banner-img {
+    width: 25%;
+}
+
+
 
 
 /* portofolio */
@@ -424,6 +436,7 @@ main {
 .contact-container .bio-container .bio .icon {
     width: 1.8vw;
     height: 1.8vw;
+    cursor: pointer;
 }
 
 .contact-container .bio-container .bio h4 {
