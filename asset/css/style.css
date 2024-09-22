@@ -118,6 +118,12 @@ h6 {
     color: var(--grey);
 }
 
+p {
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: var(--grey);
+}
+
 section {
     margin-top: 3vw;
     margin-bottom: 6vw;
