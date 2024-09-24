@@ -13,10 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
     <!-- my style -->
     <link rel="stylesheet" href="asset/css/style.css">
+    <!-- swiperJS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
 </head>
 <body>
 
@@ -53,7 +54,99 @@
 <h3 id="portofolio" >portofolio</h3>
 <!-- swiper card slider -->
 <section>
-    <div class="portofolio-container">
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/crowde.png" alt="">
+        <div class="card-content">
+            <h4>crowde</h4>
+            <h6>Meningkatkan user experience pada website crowde.</h6>
+            <div class="button-card-container">
+                <button class="two" onclick="location.href='https://medium.com/@nurjayakusuma/crowde-9271b035ada8'" type="button">learn more</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/pbji.jpg" alt="">
+        <div class="card-content">
+            <h4>pbji-DIY</h4>
+            <h6>Merancang website company profile dan aplikasi pengolah data anggota</h6>
+            <div class="button-card-container">
+                <button class="two" onclick="location.href='https://www.figma.com/proto/mzkidHkY0THYvoO34F8nmu/UI%2FUX-PBJI?node-id=281-1294&node-type=frame&t=zFIwG65vFkfGqd4u-0&scaling=scale-down-width&content-scaling=fixed&page-id=1%3A5&starting-point-node-id=12%3A4956&hide-ui=1'">learn more</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/smartapp.png" alt="">
+        <div class="card-content">
+            <h4>samrt-app</h4>
+            <h6>Merancang Aplikasi Mobile Learning untuk Lembaga Kursus IT</h6>
+            <div class="button-card-container">
+                <button class="two" onclick="location.href='https://medium.com/@nurjayakusuma/ui-ux-case-study-smartapp-education-ef293c44508b'">learn more</button> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/petho.png" alt="">
+        <div class="card-content">
+            <h4>petho</h4>
+            <h6>Merancang website company profile Petho dengan desain profesional dan elegan.</h6>
+            <div class="button-card-container">
+                <button class="two" onclick="location.href='http://www.petho.rf.gd'">learn more</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/pethobooth.png" alt="">
+        <div class="card-content">
+            <h4>pethobooth </h4>
+            <h6>Merancang landing page sistem photobooth dengan tampilan yang mudah dipahami.</h6>
+            <div class="button-card-container">
+                <button class="two" onclick="location.href='http://www.petho.rf.gd'">learn more</button> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/ecomerce.png" alt="">
+        <div class="card-content">
+            <h4>ecommerce</h4>
+            <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+            <div class="button-card-container">
+                <button class="two">learn more</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide card">
+        <img class="card-img" src="asset/img/mobileapp.jpg" alt="">
+        <div class="card-content">
+            <h4>mobile-app</h4>
+            <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h6>
+            <div class="button-card-container">
+                <button class="two">learn more</button> 
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+</div>
+
+    <!-- <div class="portofolio-container">
         <i id="kiri" class="kiri"><i data-feather="chevron-left"></i></i>
         <i id="kanan" class="kanan"><i data-feather="chevron-right"></i></i>
 
@@ -137,10 +230,10 @@
 
             
         </div>
-    </div>
+    </div> -->
 </section>
 <!-- end swiper card slider -->
- <!-- end portofolio -->
+<!-- end portofolio -->
 
 <!-- about me -->
 <h3 id="about">about me</h3>
@@ -270,9 +363,9 @@
 
    
 <!-- father icons -->
-<script>
-    feather.replace();
-  </script>
+<script>feather.replace();</script>
+<!-- swiperJS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- my script -->
 <script src="asset/js/script.js"></script>
 </body>
