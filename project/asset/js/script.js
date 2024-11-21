@@ -4,7 +4,7 @@ voucherBtn.addEventListener('click', function() {
     let voucher = document.getElementById('voucher').value;
 
     if (voucher === 'rumahkingkong') {
-        location.href = 'http://dopoto.rf.gd/petho/rettake/gopoto/success.html'; // Redirect
+        location.href = 'https://nurjayakusuma.github.io/project/success/success.html'; // Redirect
         document.getElementById('voucher').value = ''; // Kosongkan input voucher
     } 
 });
