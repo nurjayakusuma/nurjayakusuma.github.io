@@ -44,7 +44,7 @@ Loop
 			WinClose, ahk_exe msedge.exe
 			sleep, 1000   ;- time in ms  if needed
 			Splashimage,off
-			Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk --edge-kiosk-type=fullscreen --app=C:\setup\index\index.html
+			Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --kiosk --edge-kiosk-type=fullscreen --app=https://nurjayakusuma.github.io/project/
 			sleep, 1000 ;- extra time
 	}
 	
